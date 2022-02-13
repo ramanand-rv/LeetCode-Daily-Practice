@@ -8,7 +8,6 @@ vector<int>v(n);
 for(int i=0; i<n;i++){
     cin>>v[i];
 }
-// sort(v.begin(), v.end());
 rotate(v.begin(), v.begin() + k, v.end());
 
 for(auto val:v)
