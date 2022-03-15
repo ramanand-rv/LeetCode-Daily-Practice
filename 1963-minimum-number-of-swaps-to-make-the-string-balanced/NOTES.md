@@ -1,0 +1,1 @@
+### You don't need a stack. You just want to know the size
