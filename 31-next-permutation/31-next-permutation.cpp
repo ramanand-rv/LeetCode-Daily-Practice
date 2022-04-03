@@ -1,6 +1,8 @@
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
-        next_permutation(nums.begin(), nums.end());
-    }
+    auto i = is_sorted_until(nums.rbegin(), nums.rend());
+    if (i != nums.rend())
+        swap(*i, *upper_bound(nums.rbegin(), i, *i));
+    reverse(nums.rbegin(), i);    }
 };
