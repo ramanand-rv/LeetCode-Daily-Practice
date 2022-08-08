@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
 public:
     int lengthOfLIS(vector<int>& nums) {
         vector<int> sub;
