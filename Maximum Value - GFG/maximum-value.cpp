@@ -43,9 +43,7 @@ class Solution {
             else{
                 ans.push_back(root->data);
             }
-
-        
-        
+            
             traversal(root->left, level+1);
             traversal(root->right, level+1);
         
