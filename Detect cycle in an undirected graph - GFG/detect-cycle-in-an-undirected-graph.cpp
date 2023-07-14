@@ -8,23 +8,50 @@ class Solution {
     // Function to detect cycle in an undirected graph.
     bool isCycle(int V, vector<int> adj[]) {
         vector<bool>visited(V, false);
+
         for(int i=0;i<V;i++){
-            if(!visited[i] && isCycleDFS(adj, i, visited, -1))
+            // if(!visited[i] && isCycleDFS(adj, i, visited, -1))
+                // return true;
+            if(!visited[i] && isCycleBFS(adj, i, visited))
                 return true;
         }
         return false;
     }
     
-    bool isCycleDFS(vector<int>adj[], int &node, vector<bool>&visited, int parent){
+    bool isCycleBFS(vector<int>adj[], int node, vector<bool> &visited){
+        queue<pair<int, int>>q;
+        q.push({node, -1});
         visited[node] = true;
-        for(auto v: adj[node]){
-            if(v==parent)   continue;
-            if(visited[v])  return true;
-            if(isCycleDFS(adj, v, visited, node))   return true;
+        
+        while(!q.empty()){
+            pair<int, int> p = q.front();
+            q.pop();
+            int node = p.first;
+            int parent = p.second;
+            
+            for(auto v:adj[node]){
+                if(!visited[v]){
+                    visited[v] = true;
+                    q.push({v, node});
+                }
+                else if(v != parent)
+                    return true;
+            }
         }
         
         return false;
     }
+    
+    // bool isCycleDFS(vector<int>adj[], int &node, vector<bool>&visited, int parent){
+    //     visited[node] = true;
+    //     for(auto v: adj[node]){
+    //         if(v==parent)   continue;
+    //         if(visited[v])  return true;
+    //         if(isCycleDFS(adj, v, visited, node))   return true;
+    //     }
+        
+    //     return false;
+    // }
 };
 
 //{ Driver Code Starts.
