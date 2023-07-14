@@ -7,29 +7,22 @@ class Solution {
   public:
     // Function to detect cycle in an undirected graph.
     bool isCycle(int V, vector<int> adj[]) {
-        // Code here
         vector<bool>visited(V, false);
-
         for(int i=0;i<V;i++){
-            if(!visited[i] && (isCycleDFS(adj, i, visited,-1)))
+            if(!visited[i] && isCycleDFS(adj, i, visited, -1))
                 return true;
         }
-        
         return false;
-        
     }
     
     bool isCycleDFS(vector<int>adj[], int &node, vector<bool>&visited, int parent){
         visited[node] = true;
-        
         for(auto v: adj[node]){
-            if(v == parent)
-                continue;
-            if(visited[v])
-                return true;
-            if(isCycleDFS(adj, v, visited, node))
-                return true;
+            if(v==parent)   continue;
+            if(visited[v])  return true;
+            if(isCycleDFS(adj, v, visited, node))   return true;
         }
+        
         return false;
     }
 };
