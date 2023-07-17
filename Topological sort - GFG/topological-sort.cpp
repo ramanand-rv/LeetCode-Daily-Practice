@@ -15,29 +15,25 @@ class Solution
 	    queue<int>zeroIn;
 	    
 	    for(int i=0;i<V;i++){
-	        for(auto e:adj[i])
+	        for(auto e: adj[i])
 	            inDegree[e]++;
 	    }
-	    
 	    for(int i=0;i<V;i++){
-	        if(inDegree[i] == 0)
+	        if(inDegree[i]==0)
 	            zeroIn.push(i);
 	    }
-	    
-	   // int visitedNode = 0;
-	    
 	    while(!zeroIn.empty()){
 	        int u = zeroIn.front();
 	        zeroIn.pop();
-	       // visitedNode++;
 	        res.push_back(u);
 	        
 	        for(auto v: adj[u]){
-	            if(--inDegree[v] == 0 )
+	            if(--inDegree[v] == 0)
 	                zeroIn.push(v);
 	        }
 	    }
 	    return res;
+
 	}
 };
 
