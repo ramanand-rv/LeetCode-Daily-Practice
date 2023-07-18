@@ -38,6 +38,7 @@ class Solution {
             int col = q.front().second;
             q.pop();
             
+            // Finding immediate Neighbours
             for(int drow = -1; drow<=1;drow++){
                 for(int dcol = -1;dcol<=1;dcol++){
                     int nrow = row + drow;
