@@ -21,11 +21,27 @@ class Solution {
             for(int col=0;col<M;col++){
                 if(!visited[row][col] && grid[row][col]=='1'){
                     count++;
-                    bfs(row, col, visited, grid);
+                    // bfs(row, col, visited, grid);
+                    dfs(row, col, visited, grid);
                 }
             }
         }
         return count;
+    }
+    
+    void dfs(int& row, int& col, vector<vector<bool>>& visited, vector<vector<char>>& grid){
+        visited[row][col] = true;
+        
+        for(int dr=-1;dr<=1;dr++){
+            for(int dc=-1;dc<=1;dc++){
+                int nr = row + dr;
+                int nc = col + dc;
+                
+                if(nr>=0 && nr<N && nc>=0 && nc<M &&
+                !visited[nr][nc] && grid[nr][nc]=='1')
+                    dfs(nr, nc, visited, grid);
+            }
+        }
     }
     
     void bfs(int &row, int &col, vector<vector<bool>>& visited,  vector<vector<char>>&grid){
