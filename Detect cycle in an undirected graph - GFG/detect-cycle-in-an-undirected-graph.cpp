@@ -7,29 +7,42 @@ class Solution {
   public:
     // Function to detect cycle in an undirected graph.
     bool isCycle(int V, vector<int> adj[]) {
+        // Code here
         vector<bool>visited(V, false);
-
         for(int i=0;i<V;i++){
-            // if(!visited[i] && isCycleDFS(adj, i, visited, -1))
-                // return true;
-            if(!visited[i] && isCycleBFS(adj, i, visited))
+            // if(!visited[i] && dfs(adj, i, visited, -1))
+            //     return true;
+            if(!visited[i] && bfs(adj, i, visited))
                 return true;
         }
         return false;
     }
     
-    bool isCycleBFS(vector<int>adj[], int node, vector<bool> &visited){
+    // bool dfs(vector<int>adj[], int u, vector<bool>&visited, int parent){
+    //     visited[u] = true;
+    //     for(int &v: adj[u]){
+    //         if(!visited[v]){
+    //             if(dfs(adj, v, visited, u))
+    //                 return true;
+    //         }
+    //         else if(parent != v)
+    //             return true;
+    //     }
+        
+    //     return false;
+    // }
+    
+    bool bfs(vector<int>adj[], int node, vector<bool>&visited){
         queue<pair<int, int>>q;
         q.push({node, -1});
         visited[node] = true;
         
         while(!q.empty()){
-            pair<int, int> p = q.front();
+            int node = q.front().first;
+            int parent = q.front().second;
             q.pop();
-            int node = p.first;
-            int parent = p.second;
             
-            for(auto v:adj[node]){
+            for(int &v: adj[node]){
                 if(!visited[v]){
                     visited[v] = true;
                     q.push({v, node});
@@ -41,17 +54,6 @@ class Solution {
         
         return false;
     }
-    
-    // bool isCycleDFS(vector<int>adj[], int &node, vector<bool>&visited, int parent){
-    //     visited[node] = true;
-    //     for(auto v: adj[node]){
-    //         if(v==parent)   continue;
-    //         if(visited[v])  return true;
-    //         if(isCycleDFS(adj, v, visited, node))   return true;
-    //     }
-        
-    //     return false;
-    // }
 };
 
 //{ Driver Code Starts.
