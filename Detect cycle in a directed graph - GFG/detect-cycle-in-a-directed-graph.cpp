@@ -9,34 +9,32 @@ class Solution {
     bool isCyclic(int V, vector<int> adj[]) {
         // code here
         vector<bool>visited(V, false);
-        vector<bool>inRecursion(V, false);
+        vector<bool>inRec(V, false);
         
         for(int i=0;i<V;i++){
-            if(!visited[i] && isCycleDFS(adj, i, visited, inRecursion))
-                return true;
+            if(!visited[i] && dfs(i, adj, visited, inRec)){
+               return true;
+            }
         }
-        return false;
         
+        return false;
     }
     
-    bool isCycleDFS(vector<int>adj[], int node, vector<bool>&visited, vector<bool>&inRecursion){
-        if(!visited[node]){
-            visited[node] = true;
-            inRecursion[node] = true;
-        }
-        
-        for(auto v:adj[node]){
-            // if not visited, check for dfs cycles
-            if(!visited[v] && isCycleDFS(adj, v, visited, inRecursion))
+    bool dfs(int u, vector<int>adj[], vector<bool>&visited, vector<bool>&inRec){
+        // if(!visited[u]){
+             visited[u] = true;
+             inRec[u] = true; 
+        // }
+       
+        for(int &v: adj[u]){
+            if(!visited[v] && dfs(v, adj, visited, inRec)){
                 return true;
-                
-            // if visited, check if in the same recursion
-            else if(inRecursion[v])
+            }
+            else if(inRec[v]){
                 return true;
-            
+            }
         }
-        
-        inRecursion[node] = false;
+        inRec[u] = false;
         return false;
     }
 };
