@@ -21,10 +21,8 @@ class Solution {
     }
     
     bool dfs(int u, vector<int>adj[], vector<bool>&visited, vector<bool>&inRec){
-        // if(!visited[u]){
-             visited[u] = true;
-             inRec[u] = true; 
-        // }
+        visited[u] = true;
+        inRec[u] = true;
        
         for(int &v: adj[u]){
             if(!visited[v] && dfs(v, adj, visited, inRec)){
