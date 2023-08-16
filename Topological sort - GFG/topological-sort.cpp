@@ -11,7 +11,7 @@ class Solution
 	{
 	    // code here
 	   // stack<int>st;
-	    vector<bool>visited(V, false);
+	   // vector<bool>visited(V, false);
 	   // for(int i=0;i<V;i++){
 	   //     if(!visited[i]){
 	   //        // dfs(i, adj, visited, st);
@@ -45,11 +45,9 @@ class Solution
 	       res.push_back(u);
 	       
 	       for(int &v: adj[u]){
-	           if(!visited[v]){
-	               if(--inDeg[v] ==0){
-	                   q.push(v);
-	               }
-	           }
+               if(--inDeg[v] ==0){
+                   q.push(v);
+               }
 	       }
 	   }
 	   
