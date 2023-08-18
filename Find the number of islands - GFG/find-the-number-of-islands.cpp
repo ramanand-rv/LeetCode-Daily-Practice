@@ -12,41 +12,38 @@ class Solution {
         // Code here
         N = grid.size();
         M = grid[0].size();
-        
+        int count=0;
         vector<vector<bool>>visited(N, vector<bool>(M, false));
-        int count =0;
-        
-        
         for(int row=0;row<N;row++){
             for(int col=0;col<M;col++){
-                if(!visited[row][col] && grid[row][col]=='1'){
-                    count++;
-                    // bfs(row, col, visited, grid);
-                    dfs(row, col, visited, grid);
+                if(!visited[row][col] && grid[row][col] == '1' ){
+                  count++;
+                //   dfs(row, col, grid, visited);
+                  bfs(row, col, grid, visited);
                 }
             }
         }
         return count;
     }
     
-    void dfs(int& row, int& col, vector<vector<bool>>& visited, vector<vector<char>>& grid){
-        visited[row][col] = true;
+    // void dfs(int row, int col, vector<vector<char>>&grid, vector<vector<bool>>&visited){
+    //     visited[row][col] = true;
         
-        for(int dr=-1;dr<=1;dr++){
-            for(int dc=-1;dc<=1;dc++){
-                int nr = row + dr;
-                int nc = col + dc;
+    //     for(int dr = -1; dr<=1; dr++){
+    //         for(int dc = -1; dc<=1; dc++){
+    //             int nrow = row + dr;
+    //             int ncol = col + dc;
                 
-                if(nr>=0 && nr<N && nc>=0 && nc<M &&
-                !visited[nr][nc] && grid[nr][nc]=='1')
-                    dfs(nr, nc, visited, grid);
-            }
-        }
-    }
+    //             if(nrow>=0 && nrow<N && ncol>=0 && ncol<M && !visited[nrow][ncol] && grid[nrow][ncol]=='1'){
+    //                 dfs(nrow, ncol, grid, visited);
+    //             }
+    //         }
+    //     }
+    // }
     
-    void bfs(int &row, int &col, vector<vector<bool>>& visited,  vector<vector<char>>&grid){
-        visited[row][col] = true;
+    void bfs(int &row, int &col, vector<vector<char>>&grid, vector<vector<bool>>&visited){
         queue<pair<int, int>>q;
+        visited[row][col] = true;
         q.push({row, col});
         
         while(!q.empty()){
@@ -54,23 +51,19 @@ class Solution {
             int col = q.front().second;
             q.pop();
             
-            // Finding immediate Neighbours
-            for(int drow = -1; drow<=1;drow++){
-                for(int dcol = -1;dcol<=1;dcol++){
-                    int nrow = row + drow;
-                    int ncol = col + dcol;
+            for(int dr=-1;dr<=1;dr++){
+                for(int dc= -1;dc<=1;dc++){
+                    int nrow = row + dr;
+                    int ncol = col + dc;
                     
-                    if(nrow<N && ncol < M && nrow >=0 && ncol>=0 &&
-                    !visited[nrow][ncol] && grid[nrow][ncol]=='1'){
-                        visited[nrow][ncol] = true;
+                    if(nrow>=0 && nrow<N && ncol>=0 && ncol<M && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
                         q.push({nrow, ncol});
+                        visited[nrow][ncol] = true;
                     }
                 }
             }
             
-            
         }
-        
     }
 };
 
