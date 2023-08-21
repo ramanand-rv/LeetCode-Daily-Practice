@@ -12,9 +12,39 @@ public:
 	    vector<int>color(V, -1);
 	    int curCol = 1;
 	    
-	    for(int i=0;i<V;i++){
-	        if(color[i]==-1 && !dfs(i, adj, color, curCol)){
-	            return false;
+	   // for(int i=0;i<V;i++){
+	   //     if(color[i]==-1 && !dfs(i, adj, color, curCol)){
+	   //         return false;
+	   //     }
+	   // }
+	   
+	   for(int i=0;i<V;i++){
+	       if(color[i]== -1){
+	           if(!bfs(i, adj, color, curCol)){
+	               return false;
+	           }
+	       }
+	   }
+	    return true;
+	}
+	
+	bool bfs(int node, vector<int>adj[], vector<int>&color, int curCol){
+	    queue<int>q;
+	    color[node] = curCol;
+	    q.push(node);
+	    
+	    while(!q.empty()){
+	        int node = q.front();
+	        q.pop();
+	        
+	        for(int &neighbour: adj[node]){
+	            if(color[node] == color[neighbour]){
+	                return false;
+	            }
+	            if(color[neighbour] == -1){
+	                color[neighbour] = 1 - color[node];
+	                q.push(neighbour);
+	            }
 	        }
 	    }
 	    return true;
@@ -24,7 +54,6 @@ public:
 	    color[node] = curCol;
 	    
 	    for(int &neighbour: adj[node]){
-	        
 	        if(color[node] == color[neighbour]){
 	            return false;
 	        }
@@ -34,7 +63,6 @@ public:
 	                return false;
 	            }
 	        }
-
 	    }
 	    return true;
 	}
