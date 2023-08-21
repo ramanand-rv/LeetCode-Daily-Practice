@@ -7,56 +7,37 @@ class Solution {
 public:
 	bool isBipartite(int V, vector<int>adj[]){
 	    // Code here
-	    
+	   // 0 -> Red
+	   // 1 -> Blue
 	    vector<int>color(V, -1);
 	    int curCol = 1;
-	   // for(int i=0; i<V; i++){
-	   //     if(color[i]==-1 && !DFS(i, adj, color, curCol)){
-	   //         return false;
-	   //     }
-	   // }
-	   for(int i=0;i<V;i++){
-	       if(color[i]==-1){
-	           if(!BFS(i, adj, color, curCol))
+	    
+	    for(int i=0;i<V;i++){
+	        if(color[i]==-1 && !dfs(i, adj, color, curCol)){
 	            return false;
-	       }
-	   }
-        return true;
-	}
-	
-	bool BFS(int curNode, vector<int>adj[], vector<int>& color, int curCol){
-	    queue<int>q;
-	    q.push(curNode);
-	    color[curNode] = curCol;
-	    while(!q.empty()){
-	        int u = q.front();
-	        q.pop();
-	        for(auto &v: adj[u]){
-	            if(color[v] == color[u])
-	                return false;
-                if(color[v] == -1){
-                    color[v] = 1 - color[u];
-                    q.push(v);
-                }
 	        }
 	    }
 	    return true;
 	}
 	
-// 	bool DFS(int curNode, vector<int>adj[], vector<int>& color, int curCol){
-// 	    color[curNode] = curCol;
+	bool dfs(int node, vector<int>adj[], vector<int>&color, int curCol){
+	    color[node] = curCol;
 	    
-// 	    for(auto &v: adj[curNode]){
-// 	        if(color[curNode] == color[v])
-// 	            return false;
-//             if(color[v]==-1){
-//                 int colOfV = 1 - curCol;
-//                 if(!DFS(v, adj, color, colOfV))
-//                     return false;
-//             }
-// 	    }
-// 	    return true;
-// 	}
+	    for(int &neighbour: adj[node]){
+	        
+	        if(color[node] == color[neighbour]){
+	            return false;
+	        }
+	        if(color[neighbour]==-1){
+	            int neighbourCol = 1 - curCol;
+	            if(!dfs(neighbour, adj, color, neighbourCol)){
+	                return false;
+	            }
+	        }
+
+	    }
+	    return true;
+	}
 
 };
 
