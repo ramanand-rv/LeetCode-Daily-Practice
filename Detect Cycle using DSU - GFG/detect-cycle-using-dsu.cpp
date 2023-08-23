@@ -8,15 +8,40 @@ class Solution
     public:
     vector<int>parent;
     vector<int>rank;
+    
+    int find(int node){
+        if(node == parent[node])
+            return node;
+        return parent[node] = find(parent[node]);
+    }
+    
+    void Union(int x, int y){
+        int parent_x = find(x);
+        int parent_y = find(y);
+        if(parent_x == parent_y)
+            return;
+        
+        if(rank[parent_x]>rank[parent_y]){
+            parent[parent_y] = parent_x;
+            rank[parent_x]++;
+        }
+        else if(rank[parent_y]>rank[parent_x]){
+            parent[parent_x] = parent_y;
+            rank[parent_y]++;
+        }
+        else{
+            parent[parent_x] = parent_y;
+            rank[parent_y]++;
+        }
+    }
     //Function to detect cycle using DSU in an undirected graph.
 	int detectCycle(int V, vector<int>adj[])
 	{
 	    parent.resize(V);
-	    rank.resize(V);
+	    rank.resize(V, 0);
 	    
 	    for(int i=0;i<V;i++){
 	        parent[i] = i;
-	        rank[i] = 0;
 	    }
 	    
 	    for(int u=0;u<V;u++){
@@ -24,41 +49,14 @@ class Solution
 	            if(u<v){
 	                int parent_u = find(u);
 	                int parent_v = find(v);
-	                
-	                if(parent_u == parent_v)
+	                if(parent_u == parent_v){
 	                    return true;
-                    Union(u, v);
+	                }
+	                Union(u, v);
 	            }
 	        }
 	    }
-	    return false;
-	    
-	}
-	
-	int find(int node){
-	    if(node == parent[node])
-	        return node;
-        return parent[node] = find(parent[node]);
-	}
-	
-	void Union(int x, int y){
-	    int xp = find(x);
-	    int yp = find(y);
-	    
-	    if(xp == yp)
-	        return;
-        
-        if(rank[xp] > rank[yp])
-            parent[yp] = xp;
-        
-        else if(rank[xp] < rank[yp])
-            parent[xp] = yp;
-        
-        else{
-            parent[xp] = yp;
-            rank[yp]++;
-        }
-        
+	    return false;    
 	}
 };
 
