@@ -21,6 +21,17 @@ public:
     
     void dfs(int row, int col, vector<vector<char>>& grid){
         visited[row][col] = true;
+       
+//         Returns the number of nodes in an island;
+//         for(int dr=-1;dr>=1;dr++){
+//             for(int dc=-1;dc>=1;dc++){
+//                 int nrow = row + dr;
+//                 int ncol = col + dc;
+//                 if(nrow<N && nrow>=0 && ncol<M && ncol>=0 
+//                && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
+//                     dfs(nrow, ncol, grid);    
+//             }
+//         }
         
         int delrow[] = {0,1,0,-1};
         int delcol[] = {1,0,-1,0};        
