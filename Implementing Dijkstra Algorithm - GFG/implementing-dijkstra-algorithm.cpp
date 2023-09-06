@@ -5,41 +5,75 @@ using namespace std;
 // } Driver Code Ends
 class Solution
 {
-	public:
-	//Function to find the shortest distance of all the vertices
-    //from the source vertex Source.
-
     // Max Heap
     // priority_queue<int, vector<int>>pq;
     
     // Min Heap
     // priority_queue<int, vector<int>>, greater<int>>pq
     
-    vector <int> dijkstra(int V, vector<vector<int>> adj[], int source)
-    {
-        priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> >pq;
+	public:
+	//Function to find the shortest distance of all the vertices
+    //from the source vertex Source.
+
+
+    
+    // Using Min Heap
+    // vector <int> dijkstra(int V, vector<vector<int>> adj[], int source)
+    // {
+    //     priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> >pq;
+    //     vector<int>result(V, INT_MAX);
+        
+    //     result[source] = 0;
+    //     pq.push({0, source});
+        
+    //     while(!pq.empty()){
+    //         int dist = pq.top().first;
+    //         int node = pq.top().second;
+    //         pq.pop();
+            
+    //         for(auto& v: adj[node]){
+    //             int neighbourNode = v[0];
+    //             int neighbourDist = v[1];
+                
+    //             if(dist + neighbourDist < result[neighbourNode]){
+    //                 result[neighbourNode] = dist + neighbourDist;
+    //                 pq.push({dist + neighbourDist, neighbourNode});
+    //             }
+    //         }
+    //     }
+    //     return result;
+    // }
+    
+    
+    vector <int> dijkstra(int V, vector<vector<int>> adj[], int source){
+        set<pair<int,int>>s;
         vector<int>result(V, INT_MAX);
         
         result[source] = 0;
-        pq.push({0, source});
+        s.insert({0, source});
         
-        while(!pq.empty()){
-            int dist = pq.top().first;
-            int node = pq.top().second;
-            pq.pop();
+        while(!s.empty()){
+            auto &it = *s.begin();
+            int dist = it.first;
+            int node = it.second;
+            s.erase(it);
             
-            for(auto& v: adj[node]){
+            for(auto &v: adj[node]){
                 int neighbourNode = v[0];
                 int neighbourDist = v[1];
                 
                 if(dist + neighbourDist < result[neighbourNode]){
+                    if(result[neighbourNode] != INT_MAX){
+                        s.erase({result[neighbourNode], neighbourNode});
+                    }
                     result[neighbourNode] = dist + neighbourDist;
-                    pq.push({dist + neighbourDist, neighbourNode});
+                    s.insert({dist + neighbourDist, neighbourNode});
                 }
             }
         }
         return result;
     }
+    
 };
 
 
