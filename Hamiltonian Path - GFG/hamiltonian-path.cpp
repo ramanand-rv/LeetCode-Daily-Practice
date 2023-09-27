@@ -11,8 +11,8 @@ class Solution
         vector<bool>visited(N+1, false);
         vector<int>adj[N+1];
         for(int i=0;i<M;i++){
-            int u = Edges[i][0];
-            int v = Edges[i][1];
+            int u = Edges[i][0]-1;
+            int v = Edges[i][1]-1;
             adj[u].push_back(v);
             adj[v].push_back(u);
             }
