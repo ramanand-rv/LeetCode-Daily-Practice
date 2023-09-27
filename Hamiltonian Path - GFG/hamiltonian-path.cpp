@@ -8,7 +8,7 @@ class Solution
     public:
     bool check(int N,int M,vector<vector<int>> Edges)
     {
-        vector<bool>visited(N+1, false);
+        vector<bool>visited(N, false);
         vector<int>adj[N+1];
         for(int i=0;i<M;i++){
             int u = Edges[i][0]-1;
@@ -29,7 +29,7 @@ class Solution
     }
     
     bool dfs(int node, vector<int>adj[], vector<bool> visited, int count){
-        if(count == (visited.size() -1)) return true;
+        if(count == (visited.size())) return true;
         count++;
         visited[node] = true;
         
