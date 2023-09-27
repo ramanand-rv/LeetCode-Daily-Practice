@@ -16,7 +16,6 @@ class Solution
             adj[u].push_back(v);
             adj[v].push_back(u);
             }
-    
         int count=1;
         for(int i=0; i<N;i++){
             if(!visited[i]){
@@ -32,13 +31,11 @@ class Solution
         if(count == (visited.size())) return true;
         count++;
         visited[node] = true;
-        
         for(int v: adj[node]){
             if(!visited[v]){
                 if(dfs(v, adj, visited, count)) return true;
             }
         }
-        // visited[node] = false;
         return false;
     }
 };
