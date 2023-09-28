@@ -22,11 +22,7 @@ class Solution{
 
             i+=2;
         }
-        // i=1;
-        // while(i<n-1){
-        //     swap(arr[i-1], arr[i+1]);
-        //     i+=2;
-        // }
+
     }
 };
 
