@@ -10,7 +10,7 @@ using namespace std;
 class Solution{
 public:
     int partyHouse(int N, vector<vector<int>> &adj){
-        vector<int>maxDistFromCurr(1);
+        int maxDistFromCurr[1];
         int minDist = N;
         
         for(int i=1;i<=N;i++){
@@ -22,11 +22,12 @@ public:
     }
     
     void dfs(int u, vector<vector<int>>& adj, int parent,
-    vector<int>& DistFromCurr, int currDist){
-        DistFromCurr[0] = max(DistFromCurr[0], currDist);
+    int maxDistFromCurr[], int currDist){
+        
+        maxDistFromCurr[0] = max(maxDistFromCurr[0], currDist);
         for(auto v: adj[u]){
             if(v != parent){
-                dfs(v, adj, u, DistFromCurr, currDist+1);
+                dfs(v, adj, u, maxDistFromCurr, currDist+1);
             }
         }
     }
