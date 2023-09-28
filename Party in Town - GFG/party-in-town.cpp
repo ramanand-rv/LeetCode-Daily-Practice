@@ -24,9 +24,13 @@ public:
     void dfs(int u, vector<vector<int>>& adj, int parent,
     int maxDistFromCurr[], int currDist){
         
+        // note down maximum distance from current node
         maxDistFromCurr[0] = max(maxDistFromCurr[0], currDist);
+        
         for(auto v: adj[u]){
             if(v != parent){
+                // If the neighbour is not same as the parent than apply dfs 
+                // and increase distance from current node by 1.
                 dfs(v, adj, u, maxDistFromCurr, currDist+1);
             }
         }
