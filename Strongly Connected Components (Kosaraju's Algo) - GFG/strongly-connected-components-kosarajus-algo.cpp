@@ -45,6 +45,7 @@ class Solution
     
     void revDFS(int u, vector<int>transpose[], vector<bool>& visited){
         visited[u] = true;
+        // nodes of each SCC can be printed here
         for(auto v: transpose[u]){
             if(!visited[v])
                 revDFS(v, transpose, visited);
