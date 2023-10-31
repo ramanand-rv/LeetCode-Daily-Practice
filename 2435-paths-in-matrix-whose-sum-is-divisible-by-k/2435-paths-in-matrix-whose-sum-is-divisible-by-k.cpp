@@ -28,7 +28,7 @@ public:
     //     Move Down
         long long int downSum = solve(grid, k, i+1, j, sum+grid[i][j], dp);
 
-        return dp[i][j][sum%k] = (rightSum % mod + downSum % mod) % mod;
+        return dp[i][j][sum%k] = (rightSum + downSum ) % mod;
     }
 };
 
