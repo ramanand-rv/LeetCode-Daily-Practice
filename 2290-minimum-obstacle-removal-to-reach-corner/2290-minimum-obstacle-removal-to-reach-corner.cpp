@@ -22,9 +22,6 @@ public:
             int col = coord.second;
             pq.pop();
             
-            if(row == n-1 && col == m-1)
-                return blocks;
-            
             for(auto &dir: directions){
                 int nr = row + dir[0];
                 int nc = col + dir[1];
