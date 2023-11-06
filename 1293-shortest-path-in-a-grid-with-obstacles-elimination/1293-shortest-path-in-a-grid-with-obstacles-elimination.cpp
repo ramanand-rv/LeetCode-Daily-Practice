@@ -79,7 +79,10 @@ public:
 //     3. if x==m-1 && y==n-1 return steps
 //     4. go to new valid cell x_, y_
 //     5. calc rem->remaining walls that can be broken from current cell:
-//          rem =  k - 
+//          rem =  k - grid[x_][y_]
+//     6. increment steps by 1, update rem and push in the queue:
+//          q.push(steps+1, rem, x_, y_)
+//     7. return -1 ;
     
     int shortestPath(vector<vector<int>>& grid, int k) {
         int m = grid.size();
