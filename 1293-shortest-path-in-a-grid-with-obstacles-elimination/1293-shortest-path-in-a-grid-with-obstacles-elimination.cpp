@@ -73,11 +73,13 @@ public:
     
     
     
-//     Passes 95% test cases:
-//     1. Find the number of steps in shortest path using BFS
-//     2. Count the number of walls encountered int the shortest path
-//     3. if number of walls is <= K return the number of steps
-//     4. Else return -1
+//     Using Djikstra's Algo
+//     1. Use a vector {steps, k, x, y} within priority queue
+//     2. Start BFS Traversal
+//     3. if x==m-1 && y==n-1 return steps
+//     4. go to new valid cell x_, y_
+//     5. calc rem->remaining walls that can be broken from current cell:
+//          rem =  k - 
     
     int shortestPath(vector<vector<int>>& grid, int k) {
         int m = grid.size();
@@ -111,7 +113,7 @@ public:
                 int y_ = y + dir[1];
 
                 if(isSafe(x_, y_)){
-                    int rem = canBreak - (grid[x_][y_]==1);
+                    int rem = canBreak - (grid[x_][y_]);
                     if(rem >=0 && rem > dp[x_][y_] ){
                         q.push({steps+1, rem, x_, y_});
                         dp[x_][y_] = rem;
