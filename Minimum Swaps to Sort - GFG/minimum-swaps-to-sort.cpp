@@ -41,7 +41,8 @@ class Solution
 	}*/
 	
 // 	-------------------------------------------------------------------------
-	int minSwaps(vector<int>&nums){
+// Accepted: Using Hashmap
+/*	int minSwaps(vector<int>&nums){
 	    vector<int>tmp(nums.begin(), nums.end());
 	    sort(tmp.begin(), tmp.end());
 	    int ans = 0;
@@ -63,7 +64,34 @@ class Solution
 	        }
 	    }
 	    return ans;
-	}
+	}*/
+	
+// --------------------------------------------------------------------------
+// treating as graph
+    int minSwaps(vector<int>&nums){
+        vector<pair<int, int>>arrPos;
+        vector<bool>visited(nums.size(), false);
+        int ans = 0;
+        
+        for(int i=0;i<nums.size();i++)
+            arrPos.push_back({nums[i], i});
+        sort(arrPos.begin(), arrPos.end());
+        
+        for(int i=0;i<nums.size();i++){
+            if(!visited[i] || arrPos[i].second != i){
+                int cycleSize = 0;
+                int j = i;
+                
+                while(!visited[j]){
+                    visited[j] = true;
+                    j = arrPos[j].second;
+                    cycleSize++;
+                }
+                if(cycleSize>0) ans += cycleSize-1;
+            }
+        }
+        return ans;
+    }
 
 };
 
