@@ -73,20 +73,25 @@ class Solution
         vector<bool>visited(nums.size(), false);
         int ans = 0;
         
+        // array of pair of element and it's corresponding index
         for(int i=0;i<nums.size();i++)
             arrPos.push_back({nums[i], i});
         sort(arrPos.begin(), arrPos.end());
         
+         
         for(int i=0;i<nums.size();i++){
+            // if current element is: not visited or not at correct position
             if(!visited[i] || arrPos[i].second != i){
                 int cycleSize = 0;
                 int j = i;
                 
+                // find cycle size
                 while(!visited[j]){
                     visited[j] = true;
                     j = arrPos[j].second;
                     cycleSize++;
                 }
+                // add cycle size -1 to the ans 
                 if(cycleSize>0) ans += cycleSize-1;
             }
         }
