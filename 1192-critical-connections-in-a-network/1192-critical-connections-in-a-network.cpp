@@ -1,6 +1,73 @@
 class Solution {
 public:
     vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
+        vector<vector<int>>adj(n);
+        vector<int> low(n), tin(n);
+        vector<bool> visited(n, false);
+        int timer = 1;
+        for(auto &c: connections){
+            adj[c[0]].push_back(c[1]);
+            adj[c[1]].push_back(c[0]);
+        }
+        
+        vector<vector<int>>bridge;
+        for(int i=0;i<n;i++){
+            if(!visited[i]){
+                dfs(i, -1, adj, bridge, visited, low, tin, timer);
+            }
+        }
+        return bridge;
+    }
+    
+    void dfs(int u, int parent, vector<vector<int>>& adj, 
+            vector<vector<int>>& bridge, vector<bool>&visited,
+            vector<int>&low, vector<int>&tin, int& timer)
+    {
+        visited[u] = true;
+        low[u] = tin[u] = timer++;
+        for(auto v: adj[u]){
+            if(v == parent) continue;
+            if(!visited[v]){
+                dfs(v, u, adj, bridge, visited, low, tin, timer);
+                low[u] = min(low[u], low[v]);
+                if(low[v] > tin[u])
+                    bridge.push_back({v, u});
+            }
+            else{
+                low[u] = min(low[u], low[v]);
+            }
+        }
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
         disc = vector<int>(n);
         low = vector<int>(n);
         for (auto conn : connections) {
@@ -11,7 +78,7 @@ public:
         return ans;
     }
     void dfs(int curr, int prev) {
-        disc[curr] = low[curr] = time++;
+    disc[curr] = low[curr] = time++;    
         for (int next : edgeMap[curr]) {
             if (disc[next] == 0) {
                 dfs(next, curr);
