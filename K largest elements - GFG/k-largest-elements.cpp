@@ -11,10 +11,19 @@ class Solution
     //Function to return k largest elements from an array.
     vector<int> kLargest(int arr[], int n, int k)
     {
-        sort(arr, arr+n, greater<int>());
+/*        sort(arr, arr+n, greater<int>());
         vector<int>res;
         for(int i=0;i<k;i++){
             res.push_back(arr[i]);
+        }
+        return res;*/
+        
+        priority_queue<int>q;
+        vector<int>res;
+        for(int i=0;i<n;i++) q.push(arr[i]);
+        while(res.size()<k){
+            res.push_back(q.top());
+            q.pop();
         }
         return res;
     }
