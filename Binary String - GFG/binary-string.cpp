@@ -11,14 +11,21 @@ class Solution
     //Function to count the number of substrings that start and end with 1.
     long binarySubstring(int n, string a){
         
-        int tmp=0, res=0;
+/*        int tmp=0, res=0;
         for(auto &x: a){
             if(x=='1'){
                 res+= tmp;
                 tmp++;
             }
         }
-        return res;
+        return res;*/
+        
+        
+        int res=0;
+        for(auto &x: a){
+            if(x=='1') res++;
+        }
+        return (res*(res-1))/2;
     }
 
 };
