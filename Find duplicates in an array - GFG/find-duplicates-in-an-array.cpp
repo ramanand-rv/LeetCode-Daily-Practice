@@ -1,3 +1,31 @@
+
+class Solution{
+  public:
+    vector<int> duplicates(long long arr[], int n) {
+
+        vector<int>res;
+        for(int i=0;i<n;i++) arr[ arr[i] % n ] += n;
+        for(int i=0;i<n;i++){
+            if(arr[i] / n > 1) res.push_back(i);
+        }
+        
+        if(res.size() == 0) return {-1};
+        return res;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
