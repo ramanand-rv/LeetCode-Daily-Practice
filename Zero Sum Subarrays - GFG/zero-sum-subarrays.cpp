@@ -17,7 +17,7 @@ public:
         int presum=0, count=0;
         for(int i=0;i<n;i++){
             presum += arr[i];
-            int remove = presum - 0;
+            int remove = presum;
             count += mp[remove];
             mp[presum] += 1;
         }
