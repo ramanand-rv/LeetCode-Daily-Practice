@@ -18,7 +18,7 @@ public:
             int diff = abs(x - sum);
             res.clear();
             
-            if(diff < minDiff){
+            if(diff <= minDiff){
                 minDiff = diff;
                 res.push_back({arr[l]});
                 res.push_back({arr[r]});
