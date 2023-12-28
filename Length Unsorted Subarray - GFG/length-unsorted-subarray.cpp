@@ -11,19 +11,19 @@ public:
 	vector<int> printUnsorted(int arr[], int n) {
 	    if(n==0) return {0, 0};
 	    int l=0, r=0;
-	    int mx = arr[0];
 	    
+	    int mn = arr[0];
 	    for(int i=0;i<n;i++){
-	        if(arr[i] < mx) l = i;
-            mx = max(mx, arr[i]);
+	        if(arr[i] < mn) r = i;
+            mn = max(mn, arr[i]);
 	    }
 	    
-	    int mn = arr[n-1];
+	    int mx = arr[n-1];
 	    for(int i=n-1;i>=0;i--){
-	        if(arr[i] > mn) r=i;
-	        mn = min(mn, arr[i]);
+	        if(arr[i] > mx) l = i;
+	        mx = min(mx, arr[i]);
 	    }
-	    return {r, l};
+	    return {l, r};
 	}
 };
 
