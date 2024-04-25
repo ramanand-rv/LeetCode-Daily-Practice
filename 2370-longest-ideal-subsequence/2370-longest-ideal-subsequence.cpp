@@ -5,7 +5,7 @@ public:
         return lis(s, k, 0, 0, dp);
     }
     
-    int lis(string &s, int k, int idx, int prv, vector<vector<int>>&dp){
+    int lis(string &s, int &k, int idx, int prv, vector<vector<int>>&dp){
         if(idx>=s.size()) return 0;
         
         if(dp[idx][prv] != -1) return dp[idx][prv];
