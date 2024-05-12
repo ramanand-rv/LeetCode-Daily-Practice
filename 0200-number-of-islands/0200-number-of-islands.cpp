@@ -1,6 +1,8 @@
 class Solution {
 public:
     int N, M;
+    int delrow[4] = {0,1,0,-1};
+    int delcol[4] = {1,0,-1,0};  
     vector<vector<bool>>visited;
     int numIslands(vector<vector<char>>& grid) {
         N = grid.size();
@@ -21,32 +23,19 @@ public:
     }
     
 //     Using DFS
-//     void dfs(int row, int col, vector<vector<char>>& grid){
-//         visited[row][col] = true;
-       
-// //         Returns the number of nodes in an island;
-// //         for(int dr=-1;dr>=1;dr++){
-// //             for(int dc=-1;dc>=1;dc++){
-// //                 int nrow = row + dr;
-// //                 int ncol = col + dc;
-// //                 if(nrow<N && nrow>=0 && ncol<M && ncol>=0 
-// //                && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
-// //                     dfs(nrow, ncol, grid);    
-// //             }
-// //         }
-        
-//         int delrow[] = {0,1,0,-1};
-//         int delcol[] = {1,0,-1,0};        
-//         for(int i=0;i<4;i++){
-//             int nrow = row + delrow[i];
-//             int ncol = col + delcol[i];
+    void dfs(int row, int col, vector<vector<char>>& grid){
+        visited[row][col] = true;
+              
+        for(int i=0;i<4;i++){
+            int nrow = row + delrow[i];
+            int ncol = col + delcol[i];
 
-//             if(nrow<N && nrow>=0 && ncol<M && ncol>=0 
-//                && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
-//                 dfs(nrow, ncol, grid);    
-//             }
-//         }
-//     }
+            if(nrow<N && nrow>=0 && ncol<M && ncol>=0 
+               && !visited[nrow][ncol] && grid[nrow][ncol] == '1'){
+                dfs(nrow, ncol, grid);    
+            }
+        }
+    }
     
     
 //     Using BFS
@@ -58,9 +47,6 @@ public:
             int r = q.front().first;
             int c = q.front().second;
             q.pop();
-            
-            int delrow[] = {1, 0, -1, 0};
-            int delcol[] = {0, 1, 0, -1};
             
             for(int i=0; i<4;i++){
                 int nr = r + delrow[i];
