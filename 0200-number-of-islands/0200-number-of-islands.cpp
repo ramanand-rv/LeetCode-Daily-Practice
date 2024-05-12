@@ -14,7 +14,8 @@ public:
             for(int col=0;col<M;col++){
                 if(!visited[row][col] && grid[row][col] == '1'){
                     // dfs(row, col, grid);
-                    bfs(row, col, grid);
+                    // bfs(row, col, grid);
+                    dfs2(row, col, grid);
                     islands++;
                 }
             }
@@ -58,5 +59,17 @@ public:
                 }
             }
         }
+    }
+    
+    void dfs2(int row, int col, vector<vector<char>>& grid){
+        if(row<0 || row >=N || col<0 || col>=M || grid[row][col]=='0' || grid[row][col]=='x')
+            return;
+        // visited[row][col] = true;
+        grid[row][col] = 'x';
+        dfs2(row+1, col, grid);
+        dfs2(row-1, col, grid);
+        dfs2(row, col+1, grid);
+        dfs2(row, col-1, grid);
+        
     }
 };
