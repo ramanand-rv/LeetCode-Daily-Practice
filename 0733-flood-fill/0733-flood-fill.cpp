@@ -10,12 +10,10 @@ public:
         
 //         image[r][c] = nclr;
         
-        
 //         dfs(r+1, c, image, ogclr, nclr);
 //         dfs(r-1, c, image, ogclr, nclr);
 //         dfs(r, c+1, image, ogclr, nclr);
 //         dfs(r, c-1, image, ogclr, nclr);
-        
 //     }
     
     void dfs(int r, int c, vector<vector<int>>& image, int ogclr, int nclr){
