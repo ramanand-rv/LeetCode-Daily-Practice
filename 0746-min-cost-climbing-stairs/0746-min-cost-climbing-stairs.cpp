@@ -4,7 +4,6 @@ public:
         if(i >= cost.size()) return 0;
 
         if(memo[i] == -1) memo[i] = cost[i] + min(minCost(i+1, cost, memo), minCost(i+2, cost, memo));
-
         return memo[i];
     }
 
