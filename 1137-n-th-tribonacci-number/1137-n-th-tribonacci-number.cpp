@@ -1,16 +1,15 @@
 class Solution {
 public:
     int tribonacci(int n) {
-        if(n==0) return 0;
-        
-        int res = 0, x=0, y=1, z=1;
-        
-        for(int i=0;i<n-2;i++){
-            res = x+y+z;
-            x=y;
-            y=z;
-            z=res;
+        if(n == 0) return 0;
+        if(n <= 2) return 1;
+
+        vector<int>dp(n+1);
+        dp[0] = 0; dp[1] = 1; dp[2] = 1;
+
+        for(int i=3; i<=n; i++){
+            dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
         }
-        return z;
+        return dp[n];
     }
 };
