@@ -1,19 +1,27 @@
 impl Solution {
     pub fn length_of_lis(nums: Vec<i32>) -> i32 {
-        let n = nums.len();
-        let mut dp = vec![1; n];
-        let mut ans:i32 = 1;
+        let mut tails = Vec::new();
         
-        for i in 1..n {
-            for j in 0..i {
-                if nums[i] > nums[j] {
-                    dp[i] = dp[i].max(dp[j] + 1);
+        for &x in &nums {
+            let mut low = 0;
+            let mut high = tails.len();
+
+            while low < high {
+                let mut mid = low + ((high - low)/2);
+
+                if(tails[mid] < x){
+                    low = mid +1;
+                }
+                else{
+                    high = mid;
                 }
             }
-            ans = ans.max(dp[i]);
-        }
-        
-        return ans;
 
+            if(low == tails.len()){
+                tails.push(x);
+            }
+            tails[low] = x;
+        }
+        return tails.len() as i32;
     }
 }
