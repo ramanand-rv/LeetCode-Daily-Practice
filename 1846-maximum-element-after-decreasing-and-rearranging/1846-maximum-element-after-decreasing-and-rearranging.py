@@ -3,7 +3,15 @@ class Solution:
         n = len(arr)
 
         arr.sort()
-        
+
+        t = 1
+
+        for v in arr:
+            if v >= t:
+                t+=1
+
+        return t-1
+'''
         arr[0] = 1
         
         for i in range (1, n):
@@ -11,3 +19,4 @@ class Solution:
                 arr[i] = arr[i-1] +1
         
         return arr[-1]
+'''
