@@ -8,7 +8,8 @@ public:
         arr.front() = 1;
 
         for(int i=1;i<n;i++){
-            arr[i] = min(arr[i], arr[i-1] +1);
+            if(arr[i] > arr[i-1] +1)
+                arr[i] = arr[i-1] +1;
         }
         return arr.back();
     }
