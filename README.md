@@ -6,6 +6,7 @@
 | ------- | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -31,4 +32,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 <!---LeetCode Topics End-->
