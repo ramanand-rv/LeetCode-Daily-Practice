@@ -61,7 +61,7 @@ public:
             int u = e[0], v = e[1], cst = e[2];
 
             adj[u].push_back({v, cst});
-            
+
             low = min(low, cst);
             high = max(high, cst);
         }
@@ -71,12 +71,16 @@ public:
             return (n == 1) ? 0 : -1;
 
         int res = -1;
+
         while (low <= high) {
+
             int mid = low + (high - low) / 2;
+
             if (find(mid, adj, online, k)) {
                 res = mid;
                 low = mid + 1;
-            } else {
+            } 
+            else {
                 high = mid - 1;
             }
         }
