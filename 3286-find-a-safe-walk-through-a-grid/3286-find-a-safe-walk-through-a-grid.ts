@@ -4,27 +4,24 @@ function findSafeWalk(grid: number[][], health: number): boolean {
     const INF = Number.MAX_SAFE_INTEGER;
 
     class Deque {
-        private data: Record<number, [number, number]>; 
-        private head: number;
-        private tail: number;
-
-        constructor() {
-            this.data = {};
-            this.head = 0;
-            this.tail = 0;
-        }
+        private data: Map<number, [number, number]> = new Map();
+        private head: number = 0;
+        private tail: number = 0;
 
         pushFront(val: [number, number]): void {
-            this.data[--this.head] = val;
+            this.data.set(--this.head, val);
         }
 
         pushBack(val: [number, number]): void {
-            this.data[this.tail++] = val;
+            this.data.set(this.tail++, val);
         }
 
         popFront(): [number, number] | undefined {
             if (this.isEmpty()) return undefined;
-            return this.data[this.head++];
+            const val = this.data.get(this.head);
+            this.data.delete(this.head); 
+            this.head++;
+            return val;
         }
 
         isEmpty(): boolean {
