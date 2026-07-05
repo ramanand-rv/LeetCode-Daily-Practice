@@ -5,6 +5,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [1301-number-of-paths-with-max-score](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
@@ -21,6 +22,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [1301-number-of-paths-with-max-score](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [3620-network-recovery-pathways](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3620-network-recovery-pathways/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -68,6 +70,7 @@
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1301-number-of-paths-with-max-score](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 ## Graph Theory
