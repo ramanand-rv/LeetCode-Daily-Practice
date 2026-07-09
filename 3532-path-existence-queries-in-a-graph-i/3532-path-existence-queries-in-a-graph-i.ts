@@ -7,6 +7,7 @@ function pathExistenceQueries(n: number, nums: number[], maxDiff: number, querie
     }
 
     const results: boolean[] = new Array(queries.length);
+    
     for (let i = 0; i < queries.length; i++) {
         const [l, r] = queries[i];
         results[i] = cmp[l] === cmp[r];
