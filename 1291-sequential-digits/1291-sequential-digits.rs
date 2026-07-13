@@ -5,9 +5,10 @@ impl Solution {
         for start in 1..=9 {
             let mut num = start;
 
+            // Append digits sequentially
             for next in (start + 1)..=9 {
                 num = num * 10 + next;
-                
+
                 if num >= low && num <= high {
                     result.push(num);
                 }
