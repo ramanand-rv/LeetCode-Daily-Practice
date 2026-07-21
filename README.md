@@ -51,6 +51,7 @@
 | ------- | ------- |
 | [1291-sequential-digits](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1291-sequential-digits/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3499-maximize-active-section-with-trade-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -71,6 +72,7 @@
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
+| [3499-maximize-active-section-with-trade-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
