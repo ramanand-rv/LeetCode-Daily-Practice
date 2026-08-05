@@ -113,6 +113,7 @@
 | [2685-count-the-number-of-complete-components](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
+| [3310-remove-methods-from-project](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -139,6 +140,7 @@
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
+| [3310-remove-methods-from-project](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3620-network-recovery-pathways](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3620-network-recovery-pathways/) | Hard |
@@ -156,6 +158,7 @@
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2685-count-the-number-of-complete-components](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2685-count-the-number-of-complete-components/) | Medium |
+| [3310-remove-methods-from-project](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
