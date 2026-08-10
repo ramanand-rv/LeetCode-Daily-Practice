@@ -47,6 +47,7 @@
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -171,6 +172,7 @@
 | [0628-maximum-product-of-three-numbers](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -252,16 +254,27 @@
 | [0486-predict-the-winner](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
+## Sprague–Grundy Theorem
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
 <!---LeetCode Topics End-->
