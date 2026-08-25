@@ -35,6 +35,7 @@
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3620-network-recovery-pathways](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3620-network-recovery-pathways/) | Hard |
+| [3718-smallest-missing-multiple-of-k](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3731-find-missing-elements](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3731-find-missing-elements/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Binary Search
@@ -75,6 +76,7 @@
 | [3471-find-the-largest-almost-missing-integer](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3518-smallest-palindromic-rearrangement-ii/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
+| [3718-smallest-missing-multiple-of-k](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3731-find-missing-elements](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3731-find-missing-elements/) | Easy |
 ## Enumeration
 | Problem Name | Difficulty |
