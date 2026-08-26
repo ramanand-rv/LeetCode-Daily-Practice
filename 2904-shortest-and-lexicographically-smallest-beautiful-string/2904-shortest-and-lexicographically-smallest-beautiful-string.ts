@@ -1,32 +1,28 @@
 function shortestBeautifulSubstring(s: string, k: number): string {
-    const n = s.length;
-    let left = 0;
-    let ones = 0;
+    const pos: number[] = [];
+
+    // Store positions of all 1s
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === '1') {
+            pos.push(i);
+        }
+    }
+
+    // Not enough 1s
+    if (pos.length < k) return "";
+
     let ans = "";
 
-    for (let right = 0; right < n; right++) {
-        if (s[right] === '1') ones++;
+    // Check every consecutive group of k ones
+    for (let i = 0; i + k - 1 < pos.length; i++) {
+        const start = pos[i];
+        const end = pos[i + k - 1];
+        const cur = s.substring(start, end + 1);
 
-        // Too many ones → shrink from left
-        while (ones > k) {
-            if (s[left] === '1') ones--;
-            left++;
-        }
-
-        // We have exactly k ones
-        if (ones === k) {
-            // Remove unnecessary leading zeros
-            while (left < right && s[left] === '0') {
-                left++;
-            }
-
-            const cur = s.substring(left, right + 1);
-
-            if (ans === "" ||
-                cur.length < ans.length ||
-                (cur.length === ans.length && cur < ans)) {
-                ans = cur;
-            }
+        if (ans === "" ||
+            cur.length < ans.length ||
+            (cur.length === ans.length && cur < ans)) {
+            ans = cur;
         }
     }
 
