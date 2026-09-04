@@ -43,6 +43,7 @@
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
+| [3903-smallest-stable-index-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -230,6 +231,7 @@
 | ------- | ------- |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
+| [3903-smallest-stable-index-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
