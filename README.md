@@ -59,6 +59,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0115-distinct-subsequences](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0115-distinct-subsequences/) | Hard |
 | [0300-longest-increasing-subsequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0486-predict-the-winner](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
@@ -125,6 +126,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0115-distinct-subsequences](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0115-distinct-subsequences/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
