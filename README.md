@@ -219,6 +219,7 @@
 | ------- | ------- |
 | [0486-predict-the-winner](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [0836-rectangle-overlap](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0836-rectangle-overlap/) | Easy |
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
@@ -363,4 +364,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0836-rectangle-overlap](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0836-rectangle-overlap/) | Easy |
 <!---LeetCode Topics End-->
