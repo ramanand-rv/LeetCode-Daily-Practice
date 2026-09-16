@@ -70,6 +70,7 @@
 | [1301-number-of-paths-with-max-score](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
@@ -226,6 +227,7 @@
 | [0877-stone-game](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0877-stone-game/) | Medium |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
 | [1510-stone-game-iv](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1510-stone-game-iv/) | Hard |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -247,6 +249,7 @@
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
 | [3903-smallest-stable-index-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
@@ -287,6 +290,7 @@
 ## Combinatorics
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3518-smallest-palindromic-rearrangement-ii/) | Hard |
