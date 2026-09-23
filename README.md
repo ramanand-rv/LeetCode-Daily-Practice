@@ -15,6 +15,7 @@
 | [1386-cinema-seat-allocation](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [1406-stone-game-iii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1406-stone-game-iii/) | Hard |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
@@ -54,6 +55,7 @@
 | ------- | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -89,6 +91,7 @@
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1386-cinema-seat-allocation](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -166,6 +169,7 @@
 | ------- | ------- |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 ## Breadth-First Search
@@ -258,6 +262,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
 | [3903-smallest-stable-index-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
