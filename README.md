@@ -153,6 +153,7 @@
 | [0940-distinct-subsequences-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0940-distinct-subsequences-ii/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1096-brace-expansion-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1096-brace-expansion-ii/) | Hard |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
@@ -325,6 +326,7 @@
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1096-brace-expansion-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1096-brace-expansion-ii/) | Hard |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -397,4 +399,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0836-rectangle-overlap](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/0836-rectangle-overlap/) | Easy |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
