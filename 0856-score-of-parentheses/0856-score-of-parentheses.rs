@@ -1,22 +1,18 @@
 impl Solution {
     pub fn score_of_parentheses(s: String) -> i32 {
-        fn f(s: &[u8], i: usize, j: usize) -> i32 {
-            let mut ans = 0;
-            let mut bal = 0;
-            let mut i = i;
-            for k in i..j {
-                bal += if s[k] == b'(' { 1 } else { -1 };
-                if bal == 0 {
-                    if k - i == 1 {
-                        ans += 1;
-                    } else {
-                        ans += 2 * f(s, i + 1, k);
-                    }
-                    i = k + 1;
+        let bytes = s.as_bytes();
+        let mut ans = 0;
+        let mut bal = 0;
+        for i in 0..bytes.len() {
+            if bytes[i] == b'(' {
+                bal += 1;
+            } else {
+                bal -= 1;
+                if i > 0 && bytes[i - 1] == b'(' {
+                    ans += 1 << bal;
                 }
             }
-            ans
         }
-        f(s.as_bytes(), 0, s.len())
+        ans
     }
 }
