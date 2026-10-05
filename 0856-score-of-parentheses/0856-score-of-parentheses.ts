@@ -1,13 +1,14 @@
 function scoreOfParentheses(s: string): number {
-    const stack: number[] = [0];
-    for (const ch of s) {
-        if (ch === '(') {
-            stack.push(0);
+    let ans = 0, bal = 0;
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === '(') {
+            bal++;
         } else {
-            const v = stack.pop()!;
-            const w = stack.pop()!;
-            stack.push(w + Math.max(2 * v, 1));
+            bal--;
+            if (s[i - 1] === '(') {
+                ans += 1 << bal;
+            }
         }
     }
-    return stack[0];
+    return ans;
 }
