@@ -26,6 +26,7 @@
 | [2778-sum-of-squares-of-special-elements](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2948-make-lexicographically-smallest-array-by-swapping-elements/) | Medium |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
@@ -102,6 +103,7 @@
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -362,6 +364,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3501-maximize-active-section-with-trade-ii/) | Hard |
 ## Counting Sort
 | Problem Name | Difficulty |
@@ -438,4 +441,8 @@
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 <!---LeetCode Topics End-->
