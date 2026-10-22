@@ -60,6 +60,7 @@
 | [3876-construct-uniform-parity-array-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
 | [3903-smallest-stable-index-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3904-smallest-stable-index-ii/) | Medium |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
