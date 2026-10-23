@@ -52,6 +52,7 @@
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
 | [3620-network-recovery-pathways](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3620-network-recovery-pathways/) | Hard |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 | [3718-smallest-missing-multiple-of-k](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 | [3731-find-missing-elements](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3731-find-missing-elements/) | Easy |
@@ -328,6 +329,7 @@
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
