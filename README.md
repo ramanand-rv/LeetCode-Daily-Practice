@@ -191,6 +191,7 @@
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
+| [2409-count-days-spent-together](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2409-count-days-spent-together/) | Easy |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -284,6 +285,7 @@
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2029-stone-game-ix](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2029-stone-game-ix/) | Medium |
+| [2409-count-days-spent-together](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/2409-count-days-spent-together/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/ramanand-rv/LeetCode-Daily-Practice/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
