@@ -1,3 +1,4 @@
+"""
 class Solution:
     def createGrid(self, m: int, n: int) -> List[str]:
         grid = [["#"] * n for _ in range(m)]
@@ -20,3 +21,11 @@ class Solution:
             grid[r][c] = "."
 
         return ["".join(row) for row in grid]
+
+"""
+
+
+class Solution:
+    def createGrid(self, m: int, n: int) -> List[str]:
+        row = "." + "#" * (n - 1)
+        return [row] * (m - 1) + ["." * n]
