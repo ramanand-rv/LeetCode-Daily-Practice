@@ -48,6 +48,7 @@ impl Solution {
 
         let mut res = vec![row; m - 1];
         res.push(bottom);
+        
         res
     }
 }
