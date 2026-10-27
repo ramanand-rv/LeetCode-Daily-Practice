@@ -1,3 +1,4 @@
+/*
 impl Solution {
     pub fn create_grid(m: i32, n: i32) -> Vec<String> {
         let m = m as usize;
@@ -33,5 +34,20 @@ impl Solution {
         grid.into_iter()
             .map(|row| row.into_iter().collect())
             .collect()
+    }
+}
+*/
+
+impl Solution {
+    pub fn create_grid(m: i32, n: i32) -> Vec<String> {
+        let m = m as usize;
+        let n = n as usize;
+
+        let row = format!(".{}", "#".repeat(n - 1));
+        let bottom = ".".repeat(n);
+
+        let mut res = vec![row; m - 1];
+        res.push(bottom);
+        res
     }
 }
