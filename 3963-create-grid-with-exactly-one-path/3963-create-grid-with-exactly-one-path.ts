@@ -1,3 +1,4 @@
+/*
 function createGrid(m: number, n: number): string[] {
     const grid: string[][] = Array.from({ length: m }, () => Array(n).fill('#'));
     let r = 0, c = 0;
@@ -19,4 +20,17 @@ function createGrid(m: number, n: number): string[] {
     }
 
     return grid.map(row => row.join(''));
+}
+*/
+
+function createGrid(m: number, n: number): string[] {
+    const res: string[] = [];
+    const row = '.' + '#'.repeat(n - 1);
+
+    for (let i = 0; i < m - 1; i++) {
+        res.push(row);
+    }
+    res.push('.'.repeat(n));
+
+    return res;
 }
