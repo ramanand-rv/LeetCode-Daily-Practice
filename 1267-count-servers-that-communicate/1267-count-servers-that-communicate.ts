@@ -1,0 +1,28 @@
+function countServers(grid: number[][]): number {
+    const m = grid.length;
+    const n = grid[0].length;
+    const row = new Array(m).fill(0);
+    const col = new Array(n).fill(0);
+
+    // Count servers in each row and column
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) {
+                row[i]++;
+                col[j]++;
+            }
+        }
+    }
+
+    let ans = 0;
+    // Check if each server shares its row or column with another
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1 && (row[i] > 1 || col[j] > 1)) {
+                ans++;
+            }
+        }
+    }
+
+    return ans;
+}
