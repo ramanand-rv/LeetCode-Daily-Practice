@@ -1,23 +1,39 @@
+import bisect
+
+
 class ProductOfNumbers:
     def __init__(self):
-        self.prefix = [1] # Base case for multiplication
+        self.size = 0
+        self.zero = -1
+        self.where = []
+        self.factor = []
 
     def add(self, num: int) -> None:
         if num == 0:
-            # A 0 resets the product history
-            self.prefix = [1]
-        else:
-            # Multiply the new number with the running product
-            self.prefix.append(self.prefix[-1] * num)
+            # Reset everything since any window including 0 is 0
+            self.zero = self.size
+            self.where = []
+            self.factor = []
+        elif num > 1:
+            # Only store numbers that affect the product
+            self.where.append(self.size)
+            self.factor.append(num)
+        self.size += 1
 
     def getProduct(self, k: int) -> int:
-        n = len(self.prefix)
-        # If k is larger than the numbers since the last 0, the window includes a 0
-        if k >= n:
+        start = self.size - k
+        # If the last zero is within or after the start of the window, product is 0
+        if self.zero >= start:
             return 0
-            
-        # Product of last k numbers is total product divided by product before them
-        return self.prefix[-1] // self.prefix[-1 - k]
+
+        # Find the first stored position >= start using binary search
+        idx = bisect.bisect_left(self.where, start)
+
+        # Multiply all factors from 'idx' to the end
+        ans = 1
+        for i in range(idx, len(self.factor)):
+            ans *= self.factor[i]
+        return ans
 
 
 # Your ProductOfNumbers object will be instantiated and called as such:
