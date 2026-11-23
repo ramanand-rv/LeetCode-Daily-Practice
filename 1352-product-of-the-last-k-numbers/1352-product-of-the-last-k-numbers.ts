@@ -1,27 +1,54 @@
 class ProductOfNumbers {
-    private prefix: number[];
+    size: number;
+    zero: number;
+    where: number[];
+    factor: number[];
 
     constructor() {
-        this.prefix = [1]; // Base case for multiplication
+        this.size = 0;
+        this.zero = -1;
+        this.where = [];
+        this.factor = [];
     }
 
     add(num: number): void {
         if (num === 0) {
-            // A 0 resets the product history
-            this.prefix = [1];
-        } else {
-            // Multiply the new number with the running product
-            this.prefix.push(this.prefix[this.prefix.length - 1] * num);
+            // Reset everything since any window including 0 is 0
+            this.zero = this.size;
+            this.where = [];
+            this.factor = [];
+        } else if (num > 1) {
+            // Only store numbers that affect the product
+            this.where.push(this.size);
+            this.factor.push(num);
         }
+        this.size++;
     }
 
     getProduct(k: number): number {
-        const n = this.prefix.length;
-        // If k is larger than the numbers since the last 0, the window includes a 0
-        if (k >= n) return 0;
+        const start = this.size - k;
+        // If the last zero is within or after the start of the window, product is 0
+        if (this.zero >= start) {
+            return 0;
+        }
 
-        // Product of last k numbers is total product divided by product before them
-        return this.prefix[n - 1] / this.prefix[n - 1 - k];
+        // Binary search to find the first stored position >= start
+        let left = 0, right = this.where.length;
+        while (left < right) {
+            const mid = (left + right) >> 1;
+            if (this.where[mid] < start) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        // Multiply all factors from 'left' to the end
+        let ans = 1;
+        for (let i = left; i < this.factor.length; i++) {
+            ans *= this.factor[i];
+        }
+        return ans;
     }
 }
 
